@@ -54,10 +54,10 @@
 
 
         .content {
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            padding-left: 1vw;
-            padding-right: 1vw;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
             background-color: #262626;
         }
         .content-title {
