@@ -1,0 +1,73 @@
+.header {
+            display: flex;
+            align-items: center;
+            height: 13vh;
+            padding-top: 1.5vh;
+            padding-bottom: 1.5vh;
+            padding-left: 4vw;
+            background-color: #262626;
+            border-bottom: 2px solid #383838;
+        }
+        .header-logo {
+            width: 10vh;
+            margin-right: 16px;
+        }
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #D4D5D5;
+        }
+
+        
+        .sidebar {
+            padding-top: 1vh;
+            padding-bottom: 4vh;
+            padding-left: 4vw;
+            padding-right: 2vw;
+            width: 20vw;
+            height: 87vh;
+            background-color: #262626;
+            border-right: 2px solid #383838;
+        }
+        .sidebar-section {
+            margin-top: 1vh;
+        }
+        .sidebar-section-title {
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #D4D5D5;
+        }
+        .sidebar-subsection-title {
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #ABACAC;
+        }
+
+
+        .social-media-button{
+            fill: #D4D5D5;
+            width: 2.5vh;
+            height: 2.5vh;
+        }
+
+
+        .content {
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            background-color: #262626;
+        }
+        .content-title {
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #D4D5D5;
+        }
+        .content-normal {
+            text-decoration: none;
+            font-size: 1.15rem;
+            color: #D4D5D5;
+        }
