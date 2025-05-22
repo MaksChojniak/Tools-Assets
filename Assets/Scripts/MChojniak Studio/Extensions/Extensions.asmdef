@@ -1,9 +1,8 @@
 {
-    "name": "Console",
-    "rootNamespace": "MChojniakStudio.Console",
+    "name": "Extensions",
+    "rootNamespace": "MChojniakStudio.Extensions",
     "references": [
-        "GUID:cb33bca1dbf942143bf7cad17e2ff2cf",
-        "GUID:cb15aa78374e01c4eb17e49c4ed4ab71"
+        "GUID:cb33bca1dbf942143bf7cad17e2ff2cf"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
