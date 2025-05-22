@@ -1,21 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace MChojniakStudio.Console
 {
-    public class Console : MonoBehaviour
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    public static class Console
     {
-        // Start is called before the first frame update
-        void Start()
+        public static void Log(object sender, string messgae)
         {
-        
+
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
+        public static void Warning(object sender, string messgae)
+        { 
+
         }
+
+        public static void Error(object sender, string messgae)
+        {
+     
+        }
+
+        public static void Command() { }
+
+
     }
+
 }
