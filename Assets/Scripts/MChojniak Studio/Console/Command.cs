@@ -7,7 +7,7 @@ namespace MChojniakStudio.Console
     using System.Collections.Generic;
     using UnityEngine;
 
-    public class Command
+    public class Command : ISearchable
     {
         public string Name;
         public Delegate Action;
@@ -17,6 +17,8 @@ namespace MChojniakStudio.Console
             Name = name;
             Action = action;
         }
+
+        public string GetTitle() => Name;
 
         public Type[] GetArguments() => Action.Method.GetParameters().Select(param => param.ParameterType).ToArray();
 
