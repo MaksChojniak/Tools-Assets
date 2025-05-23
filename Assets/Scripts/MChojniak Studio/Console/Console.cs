@@ -7,22 +7,28 @@ namespace MChojniakStudio.Console
 
     public static class Console
     {
+        static ConsoleSetup setup => ConsoleSetup.Instance;
+
+
         public static void Log(object sender, string messgae)
         {
 
         }
 
         public static void Warning(object sender, string messgae)
-        { 
+        {
 
         }
 
         public static void Error(object sender, string messgae)
         {
-     
+
         }
 
-        public static void Command() { }
+        public static void Command()
+        {
+
+        }
 
 
     }
