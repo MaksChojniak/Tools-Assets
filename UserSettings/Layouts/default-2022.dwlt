@@ -91,7 +91,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Project
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -106,22 +106,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1118
+    x: 1432
     y: 0
-    width: 802
+    width: 488
     height: 987
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 28}
   m_Panes:
   - {fileID: 28}
-  - {fileID: 18}
-  m_Selected: 1
+  m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -287,7 +286,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 478
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -307,12 +306,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1118
+    width: 1432
     height: 987
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 583
+  controlID: 76
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,8 +331,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1118
-    height: 470
+    width: 1432
+    height: 451
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -355,10 +354,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 330
-    height: 470
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 493
+    height: 451
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -379,12 +378,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 330
+    x: 493
     y: 0
-    width: 788
-    height: 470
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 939
+    height: 451
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 21}
@@ -408,9 +407,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 470
-    width: 1118
-    height: 517
+    y: 451
+    width: 1432
+    height: 536
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 23}
@@ -420,8 +419,9 @@ MonoBehaviour:
   - {fileID: 26}
   - {fileID: 27}
   - {fileID: 25}
+  - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 5
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,10 +442,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1118
-    y: 73
-    width: 801
-    height: 966
+    x: 0
+    y: 524
+    width: 1431
+    height: 515
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -457,12 +457,12 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 3922
+    ID: 1265
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 672
-    - 224
+    - 334
+    - 111
     relativeSizes:
     - 0.75
     - 0.25
@@ -472,7 +472,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 896
+    lastTotalSize: 445
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -540,9 +540,9 @@ MonoBehaviour:
       uniqueId: '[Tools Assets][suite]'
       name: Tools Assets
       fullName: Tools Assets
-      resultStatus: 2
-      duration: 0.1033065
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2509398
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -556,9 +556,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: D:/Projects/Unity/Projects/Asset Store Tools/Tools Assets/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 0.0672216
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2136923
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -572,9 +572,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[MChojniakStudio][suite]
       name: MChojniakStudio
       fullName: MChojniakStudio
-      resultStatus: 2
-      duration: 0.0661884
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2057516
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -588,9 +588,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/MChojniakStudio/[Extensions][suite]
       name: Extensions
       fullName: MChojniakStudio.Extensions
-      resultStatus: 2
-      duration: 0.065648
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.2006012
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -604,9 +604,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/MChojniakStudio/Extensions/[Tests][suite]
       name: Tests
       fullName: MChojniakStudio.Extensions.Tests
-      resultStatus: 2
-      duration: 0.062188
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.193378
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -620,9 +620,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/[Tests][MChojniakStudio.Extensions.Tests.UnitTest][suite]
       name: UnitTest
       fullName: MChojniakStudio.Extensions.Tests.UnitTest
-      resultStatus: 2
-      duration: 0.0574016
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1884238
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -632,13 +632,13 @@ MonoBehaviour:
       categories: []
       parentId: 1019
       parentUniqueId: Tests.dll/MChojniakStudio/Extensions/[Tests][suite]
-    - id: 1015
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom
-      resultStatus: 2
-      duration: 0.0506802
-      messages: One or more child tests had errors
+    - id: 1137
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo
+      resultStatus: 1
+      duration: 0.1720189
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -649,77 +649,1114 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/[Tests][MChojniakStudio.Extensions.Tests.UnitTest][suite]
     - id: 1002
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int16,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int16,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int16,True)
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int16,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int16,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int16,True)
       resultStatus: 1
-      duration: 0.0201922
+      duration: 0.0193557
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: short to short'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
     - id: 1003
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt16,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt16,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt16,True)
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt16,False)
       resultStatus: 1
-      duration: 0.0005877
+      duration: 0.0011534
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: short to ushort'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
     - id: 1004
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int32,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int32,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int32,True)
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int32,True)
       resultStatus: 1
-      duration: 0.0001465
+      duration: 0.0323974
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: short to int'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
     - id: 1005
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt32,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt32,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt32,True)
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt32,False)
       resultStatus: 1
-      duration: 0.000364
+      duration: 0.0002901
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: short to uint'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
     - id: 1006
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int64,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int64,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Int64,True)
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Int64,True)
+      resultStatus: 1
+      duration: 0.0006759
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to long'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1007
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0002207
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to ulong'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1008
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Single,True)
+      resultStatus: 1
+      duration: 0.0006382
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to float'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1009
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Double,True)
+      resultStatus: 1
+      duration: 0.0006008
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to double'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1010
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.String,False)
+      resultStatus: 1
+      duration: 0.0002132
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to string'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1011
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Char,False)
+      resultStatus: 1
+      duration: 0.000202
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to char'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1012
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int16,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001411
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: short to object'
+      isSuite: 0
+      categories:
+      - short
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1013
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to short'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1014
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt16,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt16,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt16,True)
+      resultStatus: 1
+      duration: 0.0001391
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to ushort'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1015
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int32,True)
+      resultStatus: 1
+      duration: 0.0006772
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to int'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1016
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt32,True)
+      resultStatus: 1
+      duration: 0.0005875
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to uint'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1017
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Int64,True)
+      resultStatus: 1
+      duration: 0.00048
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to long'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1018
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.UInt64,True)
+      resultStatus: 1
+      duration: 0.0004958
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to ulong'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1019
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Single,True)
+      resultStatus: 1
+      duration: 0.0004582
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to float'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1020
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Double,True)
+      resultStatus: 1
+      duration: 0.0004446
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to double'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1021
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.String,False)
+      resultStatus: 1
+      duration: 0.0007526
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to string'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1022
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Char,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Char,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Char,True)
+      resultStatus: 1
+      duration: 0.000602
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to char'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1023
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt16,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001572
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ushort to object'
+      isSuite: 0
+      categories:
+      - ushort
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1024
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0002029
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to short'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1025
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.000196
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to ushort'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1026
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int32,True)
+      resultStatus: 1
+      duration: 0.0001484
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to int'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1027
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0001945
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to uint'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1028
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Int64,True)
+      resultStatus: 1
+      duration: 0.0005955
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to long'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1029
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0001946
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to ulong'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1030
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Single,True)
+      resultStatus: 1
+      duration: 0.0004489
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to float'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1031
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Double,True)
+      resultStatus: 1
+      duration: 0.0004541
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to double'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1032
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.String,False)
+      resultStatus: 1
+      duration: 0.0002115
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to string'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1033
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Char,False)
+      resultStatus: 1
+      duration: 0.0001944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to char'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1034
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int32,System.Object,True)
+      resultStatus: 1
+      duration: 0.00015
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: int to object'
+      isSuite: 0
+      categories:
+      - int
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1035
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001955
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to short'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1036
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0001866
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to ushort'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1037
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0001896
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to int'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1038
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt32,True)
+      resultStatus: 1
+      duration: 0.0001443
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to uint'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1039
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Int64,True)
+      resultStatus: 1
+      duration: 0.0007092
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to long'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1040
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.UInt64,True)
+      resultStatus: 1
+      duration: 0.0004834
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to ulong'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1041
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Single,True)
+      resultStatus: 1
+      duration: 0.0004734
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to float'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1042
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Double,True)
+      resultStatus: 1
+      duration: 0.0004646
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to double'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1043
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.String,False)
+      resultStatus: 1
+      duration: 0.0001944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to string'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1044
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Char,False)
+      resultStatus: 1
+      duration: 0.0002387
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to char'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1045
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt32,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001512
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: uint to object'
+      isSuite: 0
+      categories:
+      - uint
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1046
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001936
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to short'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1047
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0001865
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to ushort'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1048
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0001827
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to int'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1049
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0001926
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to uint'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1050
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Int64,True)
+      resultStatus: 1
+      duration: 0.0001498
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to long'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1051
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0002014
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to ulong'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1052
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Single,True)
+      resultStatus: 1
+      duration: 0.0006807
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to float'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1053
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Double,True)
+      resultStatus: 1
+      duration: 0.0004809
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to double'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1054
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.String,False)
+      resultStatus: 1
+      duration: 0.0002029
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to string'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1055
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Char,False)
+      resultStatus: 1
+      duration: 0.0001964
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to char'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1056
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Int64,System.Object,True)
+      resultStatus: 1
+      duration: 0.00015
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: long to object'
+      isSuite: 0
+      categories:
+      - long
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1057
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001935
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to short'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1058
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0001845
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to ushort'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1059
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0001861
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to int'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1060
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0001921
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to uint'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1061
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Int64,False)
+      resultStatus: 1
+      duration: 0.0001927
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to long'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1062
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.UInt64,True)
+      resultStatus: 1
+      duration: 0.0001516
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to ulong'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1063
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Single,True)
+      resultStatus: 1
+      duration: 0.0007336
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to float'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1064
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Double,True)
+      resultStatus: 1
+      duration: 0.0004829
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to double'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1065
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.String,False)
+      resultStatus: 1
+      duration: 0.0002045
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to string'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1066
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Char,False)
+      resultStatus: 1
+      duration: 0.0002069
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: ulong to char'
+      isSuite: 0
+      categories:
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1067
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.UInt64,System.Object,True)
       resultStatus: 1
       duration: 0.0001401
       messages: 
@@ -727,152 +1764,1192 @@ MonoBehaviour:
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: ulong to object'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1007
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt64,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt64,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.UInt64,True)
+      - ulong
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1068
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int16,False)
       resultStatus: 1
-      duration: 0.0003246
+      duration: 0.0001858
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: float to short'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1008
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Single,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Single,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Single,True)
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1069
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt16,False)
       resultStatus: 1
-      duration: 0.0002549
+      duration: 0.0001829
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: float to ushort'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1009
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Double,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Double,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Double,True)
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1070
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int32,False)
       resultStatus: 1
-      duration: 0.0002403
+      duration: 0.000192
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: float to int'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1010
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Decimal,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Decimal,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Decimal,True)
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1071
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt32,False)
       resultStatus: 1
-      duration: 0.000729
+      duration: 0.0001939
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: float to uint'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1011
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.String,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.String,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.String,True)
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1072
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Int64,False)
       resultStatus: 1
-      duration: 0.0003094
+      duration: 0.0001938
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: float to long'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1012
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Char,False)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Char,False)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Char,False)
-      resultStatus: 2
-      duration: 0.0077868
-      messages: "  Expected: False\r\n  But was:  True\r\n"
-      output: 
-      stacktrace: 'at MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom
-        (System.Type from, System.Type to, System.Boolean expectedResult) [0x00009]
-        in D:\Projects\Unity\Projects\Asset Store Tools\Tools Assets\Assets\Scripts\MChojniak
-        Studio\Extensions\Tests\UnitTest.cs:29
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    - id: 1013
-      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Object,True)]
-      name: UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Object,True)
-      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Object,True)
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1073
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.UInt64,False)
       resultStatus: 1
-      duration: 0.0002469
+      duration: 0.0001832
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: 'Conversion Type: float to ulong'
       isSuite: 0
       categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom][suite]
-    m_ResultText: "UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom(System.Int32,System.Char,False)
-      (0,008s)\n---\nExpected: False\r\n  But was:  True\n---\nat MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom
-      (System.Type from, System.Type to, System.Boolean expectedResult) [0x00009]
-      in D:\\Projects\\Unity\\Projects\\Asset Store Tools\\Tools Assets\\Assets\\Scripts\\MChojniak
-      Studio\\Extensions\\Tests\\UnitTest.cs:29"
-    m_ResultStacktrace: 'at MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsRealAssignableFrom
-      (System.Type from, System.Type to, System.Boolean expectedResult) [0x00009]
-      in D:\Projects\Unity\Projects\Asset Store Tools\Tools Assets\Assets\Scripts\MChojniak
-      Studio\Extensions\Tests\UnitTest.cs:29
-
-'
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1074
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Single,True)
+      resultStatus: 1
+      duration: 0.0001389
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: float to float'
+      isSuite: 0
+      categories:
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1075
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Double,True)
+      resultStatus: 1
+      duration: 0.0006847
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: float to double'
+      isSuite: 0
+      categories:
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1076
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.String,False)
+      resultStatus: 1
+      duration: 0.0002048
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: float to string'
+      isSuite: 0
+      categories:
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1077
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Char,False)
+      resultStatus: 1
+      duration: 0.0001921
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: float to char'
+      isSuite: 0
+      categories:
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1078
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Single,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001418
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: float to object'
+      isSuite: 0
+      categories:
+      - float
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1079
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001838
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to short'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1080
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0002058
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to ushort'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1081
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0001926
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to int'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1082
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0002013
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to uint'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1083
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Int64,False)
+      resultStatus: 1
+      duration: 0.0001866
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to long'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1084
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0001851
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to ulong'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1085
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Single,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Single,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Single,False)
+      resultStatus: 1
+      duration: 0.0002035
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to float'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1086
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Double,True)
+      resultStatus: 1
+      duration: 0.0001601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to double'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1087
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.String,False)
+      resultStatus: 1
+      duration: 0.0001996
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to string'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1088
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Char,False)
+      resultStatus: 1
+      duration: 0.0001931
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to char'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1089
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Double,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001423
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: double to object'
+      isSuite: 0
+      categories:
+      - double
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1090
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001855
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to short'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1091
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt16,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt16,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt16,True)
+      resultStatus: 1
+      duration: 0.0007604
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to ushort'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1092
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int32,True)
+      resultStatus: 1
+      duration: 0.0004524
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to int'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1093
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt32,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt32,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt32,True)
+      resultStatus: 1
+      duration: 0.0004548
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to uint'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1094
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Int64,True)
+      resultStatus: 1
+      duration: 0.0004729
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to long'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1095
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt64,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt64,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.UInt64,True)
+      resultStatus: 1
+      duration: 0.0004676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to ulong'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1096
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Single,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Single,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Single,True)
+      resultStatus: 1
+      duration: 0.0004784
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to float'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1097
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Double,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Double,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Double,True)
+      resultStatus: 1
+      duration: 0.0004979
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to double'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1098
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.String,False)
+      resultStatus: 1
+      duration: 0.0001964
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to string'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1099
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Char,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Char,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Char,True)
+      resultStatus: 1
+      duration: 0.0001448
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to char'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1100
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Char,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001489
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: char to object'
+      isSuite: 0
+      categories:
+      - char
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1101
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0017388
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to short'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1102
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0002815
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to ushort'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1103
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0002695
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to int'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1104
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0002424
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to uint'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1105
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Int64,False)
+      resultStatus: 1
+      duration: 0.0002396
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to long'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1106
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0002487
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to ulong'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1107
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Single,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Single,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Single,False)
+      resultStatus: 1
+      duration: 0.000262
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to float'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1108
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Double,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Double,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Double,False)
+      resultStatus: 1
+      duration: 0.0002648
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to double'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1109
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.String,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.String,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.String,True)
+      resultStatus: 1
+      duration: 0.0001448
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to string'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1110
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Char,False)
+      resultStatus: 1
+      duration: 0.0002882
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to char'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1111
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.String,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001562
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: string to object'
+      isSuite: 0
+      categories:
+      - string
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1112
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0001511
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to short'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1113
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0001517
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to ushort'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1114
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0001518
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to int'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1115
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0001524
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to uint'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1116
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Int64,False)
+      resultStatus: 1
+      duration: 0.0001561
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to long'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1117
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0001516
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to ulong'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1118
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Single,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Single,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Single,False)
+      resultStatus: 1
+      duration: 0.000152
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to float'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1119
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Double,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Double,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Double,False)
+      resultStatus: 1
+      duration: 0.0001503
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to double'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1120
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.String,False)
+      resultStatus: 1
+      duration: 0.0001508
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to string'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1121
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Char,False)
+      resultStatus: 1
+      duration: 0.0001507
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to char'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1122
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Object,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001506
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: object to object'
+      isSuite: 0
+      categories:
+      - object
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1123
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.SByte,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.SByte,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.SByte,False)
+      resultStatus: 1
+      duration: 0.0002392
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to sbyte'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1124
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Byte,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Byte,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Byte,False)
+      resultStatus: 1
+      duration: 0.0001998
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to byte'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1125
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int16,False)
+      resultStatus: 1
+      duration: 0.0002076
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to short'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1126
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt16,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt16,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt16,False)
+      resultStatus: 1
+      duration: 0.0002101
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to ushort'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1127
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int32,False)
+      resultStatus: 1
+      duration: 0.0002102
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to int'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1128
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt32,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt32,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt32,False)
+      resultStatus: 1
+      duration: 0.0001956
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to uint'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1129
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Int64,False)
+      resultStatus: 1
+      duration: 0.0001948
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to long'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1130
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt64,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt64,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.UInt64,False)
+      resultStatus: 1
+      duration: 0.0002038
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to ulong'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1131
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Single,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Single,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Single,False)
+      resultStatus: 1
+      duration: 0.0002032
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to float'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1132
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Double,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Double,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Double,False)
+      resultStatus: 1
+      duration: 0.0001959
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to double'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1133
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Char,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Char,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Char,False)
+      resultStatus: 1
+      duration: 0.0001912
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to char'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1134
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.String,False)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.String,False)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.String,False)
+      resultStatus: 1
+      duration: 0.0002032
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to string'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1135
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Object,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Object,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Object,True)
+      resultStatus: 1
+      duration: 0.0001546
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to object'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    - id: 1136
+      uniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/UnitTest_EditMode_ReflectionExtension_IsAssignableTo/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Decimal,True)]
+      name: UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Decimal,True)
+      fullName: MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo(System.Decimal,System.Decimal,True)
+      resultStatus: 1
+      duration: 0.0001594
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 'Conversion Type: decimal to decimal'
+      isSuite: 0
+      categories:
+      - decimal
+      parentId: 1137
+      parentUniqueId: Tests.dll/MChojniakStudio/Extensions/Tests/UnitTest/[Tests][MChojniakStudio.Extensions.Tests.UnitTest.UnitTest_EditMode_ReflectionExtension_IsAssignableTo][suite]
+    m_ResultText: Extensions (0,201s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9ccd06f8
-      m_LastClickedID: -133771876
-      m_ExpandedIDs: 3be52b8ce557abf76578b2ff64caf50e42650c15fcb41f160cdc1a26480dea5baf6a6f6fffffff7f
+      m_SelectedIDs: 6578b2ff
+      m_LastClickedID: -5080987
+      m_ExpandedIDs: 3be52b8ce557abf76578b2ff42650c15fcb41f160cdc1a26480dea5baf6a6f6fffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -895,9 +2972,21 @@ MonoBehaviour:
       FailedHidden: 0
       NotRunHidden: 0
       m_SearchString: 
-      selectedCategoryMask: 0
+      selectedCategoryMask: -1
       availableCategories:
+      - char
+      - decimal
+      - double
+      - float
+      - int
+      - long
+      - object
+      - short
+      - string
+      - uint
+      - ulong
       - Uncategorized
+      - ushort
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -918,10 +3007,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 330
+    x: 493
     y: 73
-    width: 786
-    height: 449
+    width: 937
+    height: 430
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -940,7 +3029,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 786, y: 428}
+  m_TargetSize: {x: 937, y: 409}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -955,10 +3044,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -393
-    m_HBaseRangeMax: 393
-    m_VBaseRangeMin: -214
-    m_VBaseRangeMax: 214
+    m_HBaseRangeMin: -468.5
+    m_HBaseRangeMax: 468.5
+    m_VBaseRangeMin: -204.5
+    m_VBaseRangeMax: 204.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -976,23 +3065,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 786
-      height: 428
+      width: 937
+      height: 409
     m_Scale: {x: 1.0729527, y: 1.0729527}
-    m_Translation: {x: 364.32953, y: 198.46106}
+    m_Translation: {x: 461.97067, y: 190.49306}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -339.55786
-      y: -184.9672
-      width: 732.55786
-      height: 398.8992
+      x: -430.56012
+      y: -177.54095
+      width: 873.291
+      height: 381.19107
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 786, y: 449}
+  m_LastWindowPixelSize: {x: 937, y: 430}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1020,8 +3109,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 329
-    height: 449
+    width: 492
+    height: 430
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1035,9 +3124,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: dc5a0000
+      m_SelectedIDs: 54520000
       m_LastClickedID: 0
-      m_ExpandedIDs: 409dffffac9efffff69effffdea2ffff2ea3ffffa0a4fffff2a4ffffb8a5ffff9aa6ffff0ca7ffff10f2ffff20fbffff
+      m_ExpandedIDs: a89cffffee9effffaca8ffffe2aaffff06afffff34b2ffffd6b4ffff1ab7fffffcb9fffffebcffffbabffffff2c1ffffa6c4ffff34c5ffffcac5ffff1ac9ffff18cbffffeeccffff6acfffffe0d1ffff34d4ffffe8d6ffff26d8ffff88d9ffff2edbffff3eddffffb8ddffffa6deffffa6dfffffbee0ffffb0e1fffff2e2ffffc2e4ffffb0e5ffff9ae6ffff84e7ffffe0e8ffffcae9ffffb4eaffff72ebffffe8ebffffd2ecffffc4edffffbaeeffff9af3ffff88f4ffff8af5fffff6f6ffffbcf7ffffbaf8ffffbaf9ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1587,9 +3676,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 543
-    width: 1117
-    height: 496
+    y: 524
+    width: 1431
+    height: 515
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1611,7 +3700,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/MChojniak Studio/Console
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1619,16 +3708,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 83
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/MChojniak Studio/Console
   m_LastFoldersGridSize: 83
   m_LastProjectPath: D:\Projects\Unity\Projects\Asset Store Tools\Tools Assets
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d25a0000
-    m_LastClickedID: 23250
-    m_ExpandedIDs: 000000000e5a0000d45a0000d85a0000f85c000000ca9a3b
+    m_SelectedIDs: 5e5d0000
+    m_LastClickedID: 23902
+    m_ExpandedIDs: 00000000185a0000205a00005a5d00005e5d0000605d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1656,7 +3745,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e5a0000
+    m_ExpandedIDs: 00000000185a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1700,7 +3789,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 17}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1733,9 +3822,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 543
-    width: 1117
-    height: 496
+    y: 524
+    width: 1431
+    height: 515
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1767,9 +3856,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 542
-    width: 1357
-    height: 497
+    y: 499
+    width: 1431
+    height: 540
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1964,12 +4053,12 @@ MonoBehaviour:
           m_ThreadIndexInThreadNames: 0
           m_DetailedViewType: 2
           m_DetailedViewSpliterState:
-            ID: 869
+            ID: 1354
             splitterInitialOffset: 1108
             currentActiveSplitter: -1
             realSizes:
-            - 831
-            - 604
+            - 829
+            - 602
             relativeSizes:
             - 0.57929593
             - 0.42070407
@@ -1979,7 +4068,7 @@ MonoBehaviour:
             maxSizes:
             - 0
             - 0
-            lastTotalSize: 1435
+            lastTotalSize: 1431
             splitSize: 6
             xOffset: 0
             m_Version: 1
@@ -2102,12 +4191,12 @@ MonoBehaviour:
           m_DetailedCallsView:
             m_SelectedID: -1
             m_VertSplit:
-              ID: 1743
+              ID: 1420
               splitterInitialOffset: 128.33333
               currentActiveSplitter: -1
               realSizes:
-              - 73
-              - 157
+              - 50
+              - 50
               relativeSizes:
               - 0.31721693
               - 0.68278307
@@ -2117,7 +4206,7 @@ MonoBehaviour:
               maxSizes:
               - 0
               - 0
-              lastTotalSize: 230
+              lastTotalSize: 60
               splitSize: 6
               xOffset: 0
               m_Version: 1
@@ -2153,9 +4242,9 @@ MonoBehaviour:
                 - width: 150
                   sortedAscending: 1
                   headerContent:
-                    m_Text: Called From
+                    m_Text: Calls To
                     m_Image: {fileID: 0}
-                    m_Tooltip: 'Parents the selected function is called from
+                    m_Tooltip: 'Functions which are called from the selected function
 
 
                       (Press
@@ -2204,7 +4293,7 @@ MonoBehaviour:
                   headerContent:
                     m_Text: Time ms
                     m_Image: {fileID: 0}
-                    m_Tooltip: Total time the selected function spends within a parent
+                    m_Tooltip: Total time the child call spends within selected function
                   contextMenuText: 
                   headerTextAlignment: 0
                   sortingArrowAlignment: 2
@@ -2219,8 +4308,8 @@ MonoBehaviour:
                   headerContent:
                     m_Text: Time %
                     m_Image: {fileID: 0}
-                    m_Tooltip: Shows how often the selected function was called from
-                      the parent call
+                    m_Tooltip: Shows how often child call was called from the selected
+                      function
                   contextMenuText: 
                   headerTextAlignment: 0
                   sortingArrowAlignment: 2
@@ -2825,7 +4914,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -24002
+  m_LastSelectedObjectID: -22736
 --- !u!114 &27
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -3028,9 +5117,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1118
+    x: 1432
     y: 73
-    width: 801
+    width: 487
     height: 966
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -3048,7 +5137,7 @@ MonoBehaviour:
     m_CachedPref: 369
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 23260
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
