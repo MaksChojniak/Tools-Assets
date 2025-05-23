@@ -7,7 +7,7 @@ namespace MChojniakStudio.Extensions.Tests
     using UnityEngine;
     using UnityEngine.TestTools;
 
-    public class UnitTest
+    public class ReflectionExtensionTest
     {
 
         #region IsRealAssignableFrom
@@ -177,8 +177,6 @@ namespace MChojniakStudio.Extensions.Tests
         }
 
         #endregion
-
-
 
     }
 }
